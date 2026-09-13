@@ -1,4 +1,7 @@
 @import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
 @font-face {
   font-family: "Vazirmatn";
   src: url("./assets/fonts/Vazirmatn-FD-NL-Regular.woff2") format("woff2");
