@@ -27,7 +27,7 @@ export default function CommentsPage   (){
             <div className=" flex justify-between items-center">
                 <h1 className=" text-2xl font-bold">comments</h1>
                 <button className=" bg-blue-400 text-white px-4 py-2 rounded-md flex items-center gap-2">
-                    <span>add posts</span>
+                    <span>add comments</span>
                 </button>
             </div>
 
@@ -39,6 +39,7 @@ export default function CommentsPage   (){
                             
                             <th className=" px-4 py-2">name </th>
                             <th className=" px-4 py-2"> email</th>
+                            <th className=" px-4 py-2"> comment </th>
                            
                            
                         </tr>
@@ -49,6 +50,7 @@ export default function CommentsPage   (){
                             <tr key={comment.Id} className=" border-b">
                             <th className=" px-4 py-2">{comment.name}</th>
                             <th className=" px-4 py-2">{comment.email}</th>
+                            <th className=" px-4 py-2">{comment.body}</th>
                         </tr>
                         ))}
                     </tbody>
